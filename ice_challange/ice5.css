@@ -2,12 +2,15 @@ body{
     margin: 0;
 }
 h1{
-    size: 100%;
+    width: 100%;
     text-align: center;
     margin: 0%;
 }
+.Hero{
+    width: 100%;
+}
 .box{
-    margin: 0;
+    margin: -6;
 }
 p{
     text-align: center;
@@ -18,20 +21,20 @@ p{
     border-radius: 50%;
     border-style: solid;
     border-color: rgb(54, 54, 54);
-    border-width: 50px ;
-    width: 10%;
+    border-width: 40px ;
+    width: 15%;
 }
 .graphic{
     border-radius: 50%;
     border-style: solid;
     border-color: rgb(54, 54, 54);
-    border-width: 50px ;
-    width: 10%;
+    border-width: 40px ;
+    width: 15%;
 }
 .person{
     border-radius: 50%;
     border-style: solid;
     border-color: rgb(54, 54, 54);
-    border-width: 50px ;
-    width: 10%;
+    border-width: 40px ;
+    width: 15%;
 }
