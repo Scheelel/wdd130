@@ -259,3 +259,12 @@ nav {
         margin-top: 25px;
     }
 }
+
+/* For rivers.html */
+
+#banner-rivers{
+    text-align: center;
+}
+#section-header{
+    text-align: left;
+}

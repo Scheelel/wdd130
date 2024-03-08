@@ -1,0 +1,33 @@
+h1{
+    text-align: center;
+    color: blue;
+    font-size: .5em;
+}
+h2{
+    text-align: center;
+    margin: 0;
+    font-size: 2em;
+}
+.gridcontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: blue;
+    align-items: center;
+    border:solid 1px grey;
+    border-top: 0;
+    border-bottom: 0;
+
+}
+.footer{
+    text-align: center;
+    font-size: 1em;
+    color: white;
+}
+.card{
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+/* .gridcontainer >*{ */
+    /* border: 2px solid white; */
+/* } */
