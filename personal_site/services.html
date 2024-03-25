@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/site_plan.css">
 </head>
 <header>
-<img class="logo" src="styles/images/Scheele Tuning-logos.jpeg" alt="Image of the company logo">
+<img class="logo" src="styles/images/Scheele_Tuning-logos.jpeg" alt="Image of the company logo">
 <nav>
     <a href="index.html">Home</a>
     <a href="contactus.html">Contact Us</a>
@@ -16,6 +16,41 @@
 </nav>
 </header>
 <body>
+    
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="styles/images/alexandru-ivanov-KVFXqyi7oLc-unsplash.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="styles/images/goh-rhy-yan-f_SDCASisgs-unsplash.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="styles/images/lance-asper-N9Pf2J656aQ-unsplash.jpg" style="width:100%">
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    
+    
+
+
     <h1>What We Offer</h1>
     <P>We are in our shop 3 days a week. Monday, Friday, and Saturday. Feel free to drop by if you have any questions or call us at (123) 456-7890. We would love to see your car and have the opportunity to tune it in the future. 
     </P>
@@ -24,9 +59,34 @@
     <P>Meet our employees:
         Leroy has been building cars since he was 14 and has almost 40 years of experience working on cars. He is an expert when it comes to both foreign and domestic cars and has a knack for the older variety. He enjoys most cars and loves to build and race them. Leroy has also been tuning cars since the early 2000s. He has extensive knowledge of how to tune Hondas and Subarus. Landon is our new employee. He has been building cars since he was 15 years old and loves to work on Subarus. He also has extensive knowledge of Honda, Ford, and VW. He has recently come to work as a resident tuner and is an expert when it comes to tuning Subarus. If you would like to get in contact with either of them please contact (123) 456-7890.
         </P>
-        <img src="styles/images/alexandru-ivanov-KVFXqyi7oLc-unsplash.jpg" alt="Image of a tuned car">
-        <img src="styles/images/goh-rhy-yan-f_SDCASisgs-unsplash.jpg" alt="Image of a ferrari">
-        <img src="styles/images/lance-asper-N9Pf2J656aQ-unsplash.jpg" alt="Image of a mustang">
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
 </body>
 <footer>
     <p><a href="site_plan.html" target="_blank">Site Plan</a></p>
