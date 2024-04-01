@@ -488,6 +488,7 @@ P {
 #main_image {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 4em;
 }
 footer {
   margin-top: 1em;
