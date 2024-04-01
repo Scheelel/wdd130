@@ -377,6 +377,8 @@ a:hover {
   right: 16px;
   z-index: 1;
   font-size: 2em;
+  background: local;
+  background-color: #f67570;
 }
 
 /* CSS for services.html */
@@ -479,4 +481,18 @@ P {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+}
+
+/* Contact Us subpage */
+
+#main_image {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+footer {
+  margin-top: 1em;
+}
+
+.container {
+  padding: 1em;
 }
